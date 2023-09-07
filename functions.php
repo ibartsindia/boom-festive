@@ -180,6 +180,13 @@ if ( !isset( $redux_demo ) && file_exists( get_template_directory() . '/inc/them
 }
 
 /**
+ * Recommended/Required Plugin Activation Configuration
+ */
+if ( file_exists( get_template_directory() . '/inc/boom-festive-plugin-activation.php' ) ) {
+    require get_template_directory() . '/inc/boom-festive-plugin-activation.php';
+}
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
