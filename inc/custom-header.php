@@ -22,7 +22,7 @@ function boom_festive_custom_header_setup() {
 		apply_filters(
 			'boom_festive_custom_header_args',
 			array(
-				'default-image'      => '',
+				'default-image'      =>'',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,

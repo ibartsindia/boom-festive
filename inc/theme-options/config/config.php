@@ -200,7 +200,6 @@ Redux::set_section(
 	array(
 		'title'            => esc_html__( 'General Settings', 'boom-festive' ),
 		'id'               => 'ibs-general',
-		'desc'             => esc_html__( 'These are really basic fields!', 'boom-festive' ),
 		'customizer_width' => '400px',
 		'icon'             => 'el el-cogs',
 	)
@@ -231,7 +230,6 @@ Redux::set_section(
 	array(
 		'title'            => esc_html__( 'Header Settings', 'boom-festive' ),
 		'id'               => 'ibs-header',
-		'desc'             => esc_html__( 'These are really basic fields!', 'boom-festive' ),
 		'customizer_width' => '400px',
 		'icon'             => 'el el-cogs',
 	)
