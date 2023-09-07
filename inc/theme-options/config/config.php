@@ -205,7 +205,95 @@ Redux::set_section(
 		'icon'             => 'el el-cogs',
 	)
 );
+//Logo section.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'      => esc_html__( 'Logo Settings', 'boom-festive' ),
+		'id'         => 'ibs-general-logo',
+		'subsection' => true,
+		'fields'     => array(
+			array(
+				'id'          => 'opt-logo-title',
+				'type'        => 'media',
+				'title'       => esc_html__( 'Logo Upload', 'boom-festive' ),
+				'subtitle'    => esc_html__( 'Upload a logo.', 'boom-festive' )
+			
+			),
+			
+		),
+	)
+);
 
+// -> START Header Selection.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'            => esc_html__( 'Header Settings', 'boom-festive' ),
+		'id'               => 'ibs-header',
+		'desc'             => esc_html__( 'These are really basic fields!', 'boom-festive' ),
+		'customizer_width' => '400px',
+		'icon'             => 'el el-cogs',
+	)
+);
+//Top Header 
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'      => esc_html__( 'Top Header Settings', 'boom-festive' ),
+		'id'         => 'ibs-header-top-header',
+		'subsection' => true,
+		'fields'     => array(
+			array(
+				'id'          => 'opt-top-header-on-off',
+				'type'     => 'switch',
+				'title'       => esc_html__( 'Top Header', 'boom-festive' ),
+				'subtitle'    => esc_html__( 'Here you can enable or disable the top header', 'boom-festive' ),
+				'default'  => true,
+			),
+			array(
+				'id'          => 'opt-top-header-phone',
+				'type'     => 'text',
+				'title'       => esc_html__( 'Phone No', 'boom-festive' ),
+				'subtitle'    => esc_html__( 'Here you can add phone no in the top header', 'boom-festive' ),
+			),
+			array(
+				'id'          => 'opt-top-header-email',
+				'type'     => 'text',
+				'title'       => esc_html__( 'Email', 'boom-festive' ),
+				'subtitle'    => esc_html__( 'Here you can add email in the top header', 'boom-festive' ),
+			),
+			array(
+				'id'       => 'opt-top-header-social-icons',
+				'type'     => 'section',
+				'title'    => esc_html__( 'Social Icons', 'boom-festive' ),
+				'subtitle' => esc_html__( 'Here you can add you social icons', 'boom-festive' ),
+				'indent'   => true, // Indent all options below until the next 'section' option is set.
+			),
+			array(
+				'id'          => 'opt-top-header-fb',
+				'type'     => 'text',
+				'title'       => esc_html__( 'Facebook', 'boom-festive' ),
+			),
+			array(
+				'id'          => 'opt-top-header-tw',
+				'type'     => 'text',
+				'title'       => esc_html__( 'Twitter', 'boom-festive' ),
+			),
+			array(
+				'id'          => 'opt-top-header-ins',
+				'type'     => 'text',
+				'title'       => esc_html__( 'Instagram', 'boom-festive' ),
+			),
+			array(
+				'id'          => 'opt-top-header-ln',
+				'type'     => 'text',
+				'title'       => esc_html__( 'Linkedin', 'boom-festive' ),
+			),
+
+		),
+	)
+);
 
 // -> START Color Selection.
 // Redux::set_section(
@@ -216,13 +304,12 @@ Redux::set_section(
 // 		'icon'  => 'el el-brush',
 // 	)
 // );
-
-require_once Redux_Core::$dir . '../config/sections/color-selection/color.php';
-require_once Redux_Core::$dir . '../config/sections/color-selection/color-gradient.php';
-require_once Redux_Core::$dir . '../config/sections/color-selection/color-rgba.php';
-require_once Redux_Core::$dir . '../config/sections/color-selection/link-color.php';
-require_once Redux_Core::$dir . '../config/sections/color-selection/palette.php';
-require_once Redux_Core::$dir . '../config/sections/color-selection/color-palette.php';
+// require_once Redux_Core::$dir . '../config/sections/color-selection/color.php';
+// require_once Redux_Core::$dir . '../config/sections/color-selection/color-gradient.php';
+// require_once Redux_Core::$dir . '../config/sections/color-selection/color-rgba.php';
+// require_once Redux_Core::$dir . '../config/sections/color-selection/link-color.php';
+// require_once Redux_Core::$dir . '../config/sections/color-selection/palette.php';
+// require_once Redux_Core::$dir . '../config/sections/color-selection/color-palette.php';
 
 // -> START Design Fields.
 Redux::set_section(
