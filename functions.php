@@ -187,6 +187,13 @@ if ( file_exists( get_template_directory() . '/inc/boom-festive-plugin-activatio
 }
 
 /**
+ * Demo Import Configuration
+ */
+if ( file_exists( get_template_directory() . '/inc/boom-festive-demo.php' ) ) {
+    require get_template_directory() . '/inc/boom-festive-demo.php';
+}
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
