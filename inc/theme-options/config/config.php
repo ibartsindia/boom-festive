@@ -242,8 +242,9 @@ Redux::set_section(
 		'id'         => 'ibs-header-top-header',
 		'subsection' => true,
 		'fields'     => array(
+			
 			array(
-				'id'          => 'opt-top-header-on-off',
+				'id'       => 'opt-top-header-switch',
 				'type'     => 'switch',
 				'title'       => esc_html__( 'Top Header', 'boom-festive' ),
 				'subtitle'    => esc_html__( 'Here you can enable or disable the top header', 'boom-festive' ),
@@ -319,11 +320,11 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/design-fields/background.php';
-require_once Redux_Core::$dir . '../config/sections/design-fields/box-shadow.php';
-require_once Redux_Core::$dir . '../config/sections/design-fields/border.php';
-require_once Redux_Core::$dir . '../config/sections/design-fields/dimensions.php';
-require_once Redux_Core::$dir . '../config/sections/design-fields/spacing.php';
+// require_once Redux_Core::$dir . '../config/sections/design-fields/background.php';
+// require_once Redux_Core::$dir . '../config/sections/design-fields/box-shadow.php';
+// require_once Redux_Core::$dir . '../config/sections/design-fields/border.php';
+// require_once Redux_Core::$dir . '../config/sections/design-fields/dimensions.php';
+// require_once Redux_Core::$dir . '../config/sections/design-fields/spacing.php';
 
 // -> START Media Uploads.
 Redux::set_section(
@@ -335,10 +336,10 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/media-uploads/gallery.php';
-require_once Redux_Core::$dir . '../config/sections/media-uploads/media.php';
-require_once Redux_Core::$dir . '../config/sections/media-uploads/multi-media.php';
-require_once Redux_Core::$dir . '../config/sections/media-uploads/slides.php';
+// require_once Redux_Core::$dir . '../config/sections/media-uploads/gallery.php';
+// require_once Redux_Core::$dir . '../config/sections/media-uploads/media.php';
+// require_once Redux_Core::$dir . '../config/sections/media-uploads/multi-media.php';
+// require_once Redux_Core::$dir . '../config/sections/media-uploads/slides.php';
 
 // -> START Presentation Fields.
 Redux::set_section(
@@ -350,9 +351,9 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/presentation-fields/divide.php';
-require_once Redux_Core::$dir . '../config/sections/presentation-fields/info.php';
-require_once Redux_Core::$dir . '../config/sections/presentation-fields/section.php';
+// require_once Redux_Core::$dir . '../config/sections/presentation-fields/divide.php';
+// require_once Redux_Core::$dir . '../config/sections/presentation-fields/info.php';
+// require_once Redux_Core::$dir . '../config/sections/presentation-fields/section.php';
 
 Redux::set_section(
 	$opt_name,
@@ -372,8 +373,8 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/switch-button/button-set.php';
-require_once Redux_Core::$dir . '../config/sections/switch-button/switch.php';
+// require_once Redux_Core::$dir . '../config/sections/switch-button/button-set.php';
+// require_once Redux_Core::$dir . '../config/sections/switch-button/switch.php';
 
 // -> START Select Fields.
 Redux::set_section(
@@ -385,9 +386,9 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/select-fields/select.php';
-require_once Redux_Core::$dir . '../config/sections/select-fields/image-select.php';
-require_once Redux_Core::$dir . '../config/sections/select-fields/select-image.php';
+// require_once Redux_Core::$dir . '../config/sections/select-fields/select.php';
+// require_once Redux_Core::$dir . '../config/sections/select-fields/image-select.php';
+// require_once Redux_Core::$dir . '../config/sections/select-fields/select-image.php';
 
 // -> START Slider / Spinner.
 Redux::set_section(
@@ -399,11 +400,11 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/slider-spinner/slider.php';
-require_once Redux_Core::$dir . '../config/sections/slider-spinner/spinner.php';
+// require_once Redux_Core::$dir . '../config/sections/slider-spinner/slider.php';
+// require_once Redux_Core::$dir . '../config/sections/slider-spinner/spinner.php';
 
 // -> START Typography.
-require_once Redux_Core::$dir . '../config/sections/typography/typography.php';
+// require_once Redux_Core::$dir . '../config/sections/typography/typography.php';
 
 // -> START Additional Types.
 Redux::set_section(
@@ -415,10 +416,10 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/additional-types/date.php';
-require_once Redux_Core::$dir . '../config/sections/additional-types/date-time-picker.php';
-require_once Redux_Core::$dir . '../config/sections/additional-types/sorter.php';
-require_once Redux_Core::$dir . '../config/sections/additional-types/raw.php';
+// require_once Redux_Core::$dir . '../config/sections/additional-types/date.php';
+// require_once Redux_Core::$dir . '../config/sections/additional-types/date-time-picker.php';
+// require_once Redux_Core::$dir . '../config/sections/additional-types/sorter.php';
+// require_once Redux_Core::$dir . '../config/sections/additional-types/raw.php';
 
 Redux::set_section(
 	$opt_name,
@@ -428,18 +429,18 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/advanced-features/callback.php';
+// require_once Redux_Core::$dir . '../config/sections/advanced-features/callback.php';
 
 // -> START Validation.
-require_once Redux_Core::$dir . '../config/sections/advanced-features/field-validation.php';
+// require_once Redux_Core::$dir . '../config/sections/advanced-features/field-validation.php';
 
 // -> START Sanitizing.
-require_once Redux_Core::$dir . '../config/sections/advanced-features/field-sanitizing.php';
+// require_once Redux_Core::$dir . '../config/sections/advanced-features/field-sanitizing.php';
 
 // -> START Required.
-require_once Redux_Core::$dir . '../config/sections/advanced-features/field-required-linking.php';
+// require_once Redux_Core::$dir . '../config/sections/advanced-features/field-required-linking.php';
 
-require_once Redux_Core::$dir . '../config/sections/advanced-features/wpml-integration.php';
+// require_once Redux_Core::$dir . '../config/sections/advanced-features/wpml-integration.php';
 
 // -> START Disabling.
 Redux::set_section(
@@ -450,8 +451,8 @@ Redux::set_section(
 	)
 );
 
-require_once Redux_Core::$dir . '../config/sections/disabling/disable-field.php';
-require_once Redux_Core::$dir . '../config/sections/disabling/disable-section.php';
+// require_once Redux_Core::$dir . '../config/sections/disabling/disable-field.php';
+// require_once Redux_Core::$dir . '../config/sections/disabling/disable-section.php';
 
 // -> START Pro Fields.
 

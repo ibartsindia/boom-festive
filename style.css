@@ -968,5 +968,54 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+/* CSS for the top header */
+.top-header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
-/* hello protik*/
+/* Style for the contact info and social media links */
+.contact-info, .social-media {
+	margin-bottom: 5px;
+	padding-left: 10px;
+}
+
+/* Style for social media icons */
+.social-media a {
+	color: #fff;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+/* Add hover effect to social media icons */
+.social-media a:hover {
+	color: #007bff;
+}
+
+
+/* Adjust spacing between the elements as needed */
+.site-branding {
+    margin-right: 20px; 
+}
+/*Make the logo and menu items in same line*/
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: beige;
+ }
+ /* Remove the margin from logo and menu items. */
+ .site-branding,
+ .nav-items {
+	margin: 0; 
+ }
+
+/* Adjust spacing between the menu elements as needed */
+ .main-navigation a{
+	padding: 10px;
+ }
