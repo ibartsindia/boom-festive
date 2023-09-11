@@ -12,7 +12,10 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<div class="container">
+			<div class="row">
+		<div class="site-info col-12 col-md-6">
+		
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'boom-festive' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
@@ -25,10 +28,10 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'boom-festive' ), 'boom-festive', '<a href="https://www.ibsofts.com">iB Softs</a>' );
 				?>
 		</div><!-- .site-info -->
+		</div>
+</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
-
 </body>
 </html>

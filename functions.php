@@ -139,6 +139,10 @@ add_action( 'widgets_init', 'boom_festive_widgets_init' );
  * Enqueue scripts and styles.
  */
 function boom_festive_scripts() {
+	//Bootstrap javascript and CSS files
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/inc/bootstrap/bootstrap.min.js', array( 'jquery' ), '4.3.1', true );
+	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/inc/bootstrap/bootstrap.min.css', array(), '4.3.1', 'all' );
+
 	wp_enqueue_style( 'boom-festive-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'boom-festive-style', 'rtl', 'replace' );
 
@@ -150,6 +154,10 @@ function boom_festive_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'boom_festive_scripts' );
 
+/**
+ * Enqueue WP Bootstrap Navwalker library (responsive menu).
+ */
+require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 /**
  * Implement the Custom Header feature.
  */

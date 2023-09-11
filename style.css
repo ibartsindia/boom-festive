@@ -999,23 +999,62 @@ textarea {
 
 
 /* Adjust spacing between the elements as needed */
-.site-branding {
+/* .site-branding {
     margin-right: 20px; 
-}
+} */
 /*Make the logo and menu items in same line*/
-.header-container {
+/* .header-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: beige;
- }
+	background-color:beige;
+ } */
  /* Remove the margin from logo and menu items. */
- .site-branding,
+ /* .site-branding,
  .nav-items {
 	margin: 0; 
- }
+ } */
 
 /* Adjust spacing between the menu elements as needed */
- .main-navigation a{
+ /* .main-navigation a{
 	padding: 10px;
- }
+ } */
+
+
+/* additional css */
+
+/* Header - Main Menu */
+header .top-bar{
+    padding: 1rem 0 0 0;
+}
+
+.main-menu{
+    padding: 0;
+}
+
+.main-menu ul{  
+    padding: 0; 
+    margin: 0; 
+    font-size: 18px; 
+    font-weight: 500; 
+    border-radius: 0;    
+}
+
+.main-menu ul li{ 
+    display: inline;  
+    margin: 0 5px 0 0;
+}
+
+.main-menu ul li:last-child{ 
+    margin: 0; 
+}
+
+.main-menu .dropdown:hover>.dropdown-menu, 
+.main-menu .dropup:hover>.dropdown-menu  {
+  display: block;
+}
+
+/* footer */
+#colophon{
+	background-color: #111;
+}
