@@ -294,6 +294,35 @@ Redux::set_section(
 	)
 );
 
+// -> START Footer Selection.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'            => esc_html__( 'Footer Settings', 'boom-festive' ),
+		'id'               => 'ibs-footer',
+		'customizer_width' => '400px',
+		'icon'             => 'el el-cogs',
+	)
+);
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'      => esc_html__( 'Copyright Settings', 'boom-festive' ),
+		'id'         => 'ibs-footer-copyright',
+		'subsection' => true,
+		'fields'     => array(
+			
+			array(
+				'id'       => 'opt-copyright',
+				'type'     => 'text',
+				'title'       => esc_html__( 'Copyright Text', 'boom-festive' ),
+				'subtitle'    => esc_html__( 'Here you can change your copyright text', 'boom-festive' ),
+				'default'  => true,
+			),
+		),
+	)
+);
+			
 // -> START Color Selection.
 // Redux::set_section(
 // 	$opt_name,
@@ -311,14 +340,14 @@ Redux::set_section(
 // require_once Redux_Core::$dir . '../config/sections/color-selection/color-palette.php';
 
 // -> START Design Fields.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Design Fields', 'boom-festive' ),
-		'id'    => 'design',
-		'icon'  => 'el el-wrench',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Design Fields', 'boom-festive' ),
+// 		'id'    => 'design',
+// 		'icon'  => 'el el-wrench',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/design-fields/background.php';
 // require_once Redux_Core::$dir . '../config/sections/design-fields/box-shadow.php';
@@ -327,14 +356,14 @@ Redux::set_section(
 // require_once Redux_Core::$dir . '../config/sections/design-fields/spacing.php';
 
 // -> START Media Uploads.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Media Uploads', 'boom-festive' ),
-		'id'    => 'media',
-		'icon'  => 'el el-picture',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Media Uploads', 'boom-festive' ),
+// 		'id'    => 'media',
+// 		'icon'  => 'el el-picture',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/media-uploads/gallery.php';
 // require_once Redux_Core::$dir . '../config/sections/media-uploads/media.php';
@@ -342,63 +371,63 @@ Redux::set_section(
 // require_once Redux_Core::$dir . '../config/sections/media-uploads/slides.php';
 
 // -> START Presentation Fields.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Presentation Fields', 'boom-festive' ),
-		'id'    => 'presentation',
-		'icon'  => 'el el-screen',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Presentation Fields', 'boom-festive' ),
+// 		'id'    => 'presentation',
+// 		'icon'  => 'el el-screen',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/presentation-fields/divide.php';
 // require_once Redux_Core::$dir . '../config/sections/presentation-fields/info.php';
 // require_once Redux_Core::$dir . '../config/sections/presentation-fields/section.php';
 
-Redux::set_section(
-	$opt_name,
-	array(
-		'id'   => 'presentation-divide-sample',
-		'type' => 'divide',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'id'   => 'presentation-divide-sample',
+// 		'type' => 'divide',
+// 	)
+// );
 
 // -> START Switch & Button Set.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Switch / Button Set', 'boom-festive' ),
-		'id'    => 'switch_buttonset',
-		'icon'  => 'el el-cogs',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Switch / Button Set', 'boom-festive' ),
+// 		'id'    => 'switch_buttonset',
+// 		'icon'  => 'el el-cogs',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/switch-button/button-set.php';
 // require_once Redux_Core::$dir . '../config/sections/switch-button/switch.php';
 
 // -> START Select Fields.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Select Fields', 'boom-festive' ),
-		'id'    => 'select',
-		'icon'  => 'el el-list-alt',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Select Fields', 'boom-festive' ),
+// 		'id'    => 'select',
+// 		'icon'  => 'el el-list-alt',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/select-fields/select.php';
 // require_once Redux_Core::$dir . '../config/sections/select-fields/image-select.php';
 // require_once Redux_Core::$dir . '../config/sections/select-fields/select-image.php';
 
 // -> START Slider / Spinner.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Slider / Spinner', 'boom-festive' ),
-		'id'    => 'slider_spinner',
-		'icon'  => 'el el-adjust-alt',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Slider / Spinner', 'boom-festive' ),
+// 		'id'    => 'slider_spinner',
+// 		'icon'  => 'el el-adjust-alt',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/slider-spinner/slider.php';
 // require_once Redux_Core::$dir . '../config/sections/slider-spinner/spinner.php';
@@ -407,27 +436,27 @@ Redux::set_section(
 // require_once Redux_Core::$dir . '../config/sections/typography/typography.php';
 
 // -> START Additional Types.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Additional Types', 'boom-festive' ),
-		'id'    => 'additional',
-		'icon'  => 'el el-magic',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Additional Types', 'boom-festive' ),
+// 		'id'    => 'additional',
+// 		'icon'  => 'el el-magic',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/additional-types/date.php';
 // require_once Redux_Core::$dir . '../config/sections/additional-types/date-time-picker.php';
 // require_once Redux_Core::$dir . '../config/sections/additional-types/sorter.php';
 // require_once Redux_Core::$dir . '../config/sections/additional-types/raw.php';
 
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Advanced Features', 'boom-festive' ),
-		'icon'  => 'el el-thumbs-up',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Advanced Features', 'boom-festive' ),
+// 		'icon'  => 'el el-thumbs-up',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/advanced-features/callback.php';
 
@@ -443,29 +472,29 @@ Redux::set_section(
 // require_once Redux_Core::$dir . '../config/sections/advanced-features/wpml-integration.php';
 
 // -> START Disabling.
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Disabling', 'boom-festive' ),
-		'icon'  => 'el el-lock',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Disabling', 'boom-festive' ),
+// 		'icon'  => 'el el-lock',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/disabling/disable-field.php';
 // require_once Redux_Core::$dir . '../config/sections/disabling/disable-section.php';
 
 // -> START Pro Fields.
 
-Redux::set_section(
-	$opt_name,
-	array(
-		'title' => esc_html__( 'Redux Extensions', 'boom-festive' ),
-		'id'    => 'redux-extensions',
-		'icon'  => 'el el-redux',
-		'class' => 'pro_highlight',
-		'desc'  => esc_html__( 'For full documentation on this field, visit: ', 'boom-festive' ) . '<a href="https://devs.redux.io/core-extensions/" target="_blank">https://devs.redux.io/core-extensions/</a>',
-	)
-);
+// Redux::set_section(
+// 	$opt_name,
+// 	array(
+// 		'title' => esc_html__( 'Redux Extensions', 'boom-festive' ),
+// 		'id'    => 'redux-extensions',
+// 		'icon'  => 'el el-redux',
+// 		'class' => 'pro_highlight',
+// 		'desc'  => esc_html__( 'For full documentation on this field, visit: ', 'boom-festive' ) . '<a href="https://devs.redux.io/core-extensions/" target="_blank">https://devs.redux.io/core-extensions/</a>',
+// 	)
+// );
 
 // require_once Redux_Core::$dir . '../config/sections/extensions/accordion.php';
 // require_once Redux_Core::$dir . '../config/sections/extensions/custom-fonts.php';
