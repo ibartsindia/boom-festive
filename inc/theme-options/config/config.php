@@ -307,7 +307,7 @@ Redux::set_section(
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Copyright Settings', 'boom-festive' ),
+		'title'      => esc_html__( 'Copyright Setting', 'boom-festive' ),
 		'id'         => 'ibs-footer-copyright',
 		'subsection' => true,
 		'fields'     => array(
